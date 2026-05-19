@@ -11,6 +11,7 @@ targets:
   SwiftUIFocusStateDemo:
     type: application
     platform: macOS
+    productName: SwiftUIFocusStateDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUIFocusStateDemo:
+    build:
+      targets:
+        SwiftUIFocusStateDemo: all
+    run:
+      config: Debug
